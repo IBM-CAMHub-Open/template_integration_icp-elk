@@ -1,6 +1,6 @@
 {
-    "name": "IBM Cloud Private ELK Integration - Other",
-    "description": "This integration template installs Filebeat on a deployed VM and registers it with the IBM Cloud Private ELK stack",
+    "name": "ELK Agent Installation Template",
+    "description": "This integration template installs the Filebeat agent on a deployed VM and registers it with the IBM Cloud Private ELK stack.",
     "version": "1.0",
     "imageUrl": "",
     "image": "",
@@ -23,27 +23,27 @@
       }
     },
     "metadata": {
-      "displayName": "IBM Cloud Private ELK Integration - Other",
+      "displayName": "ELK Agent Installation Template",
       "providerDisplayName": "Other",
-      "longDescription": "This integration template installs Filebeat on a deployed VM and registers it with the IBM Cloud Private ELK stack",
+      "longDescription": "This integration template installs Filebeat on a deployed VM and registers it with the IBM Cloud Private ELK stack. The filebeat agent installer(filebeat-6.2.2-amd64.deb  filebeat-6.2.2-x86_64.rpm) must be available in the evironment and accessible via a URI (http/s, ftp, file). It is assumed that an ELK endpoint has been installed and accessible from the target VM.",
       "bullets": [{
     "title": "Clouds",
     "description": " Other<br>"},
 {
     "title": "Operating Systems Supported",
-    "description": "N/A<br>"},
+    "description": "Ubuntu 16<br>Ubuntu 14<br>Redhat 6.x<br>Redhat 7.x<br>"},
 {
     "title": "Topology",
-    "description": "Filebeat with config<br>"},
+    "description": "Filebeat Agent installed and configured.<br>"},
 {
     "title": "Software Deployed",
-    "description": "Filebeat<br>"},
+    "description": "Filebeat Agent.<br>"},
 {
     "title": "Default Virtual Machine Settings",
-    "description": "N/A<br>"},
+    "description": "Minimal 100mb in /tmp.<br>"},
 {
     "title": "Usage and Special Notes",
-    "description": "The IBM Cloud Private ELK does not support receiving logs from external sources by default. See the documentation for how to enable this.<br>"}
+    "description": "1. The IBM Cloud Private ELK does not support receiving logs from external sources by default. See the documentation for how to enable this.<br>"}
 ],
       "featuredImageUrl": "",
       "imageUrl": "",
