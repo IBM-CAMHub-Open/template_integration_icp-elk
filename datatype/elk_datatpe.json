@@ -1,5 +1,5 @@
   {
-    "name": "com.ibm.icp.logstash",
+    "name": "com_ibm_icp_logstash",
     "label": "ICP Logstash Service",
     "description": "ICP Logstash Service",
     "attributes": [

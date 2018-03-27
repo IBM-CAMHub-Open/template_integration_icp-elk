@@ -1,4 +1,9 @@
 {
+  "input_datatypes": [
+     {
+         "name": "com_ibm_icp_logstash"
+     }
+  ],
   "input_groups": [
     {
       "name": "elk_agent",
@@ -59,7 +64,8 @@
       "secured": false,
       "required": true,
       "group_name": "elk_agent",
-      "immutable": false
+      "immutable": false,
+      "default" : "${com_ibm_icp_logstash.icp_cluster_ip}"
     },
     {
       "name": "logstash_server_port",
@@ -70,7 +76,8 @@
       "secured": false,
       "required": true,
       "group_name": "elk_agent",
-      "immutable": false
+      "immutable": false,
+      "default" : "${com_ibm_icp_logstash.icp_logstash_port}"
     },
     {
       "name": "filebeat_source_url",
