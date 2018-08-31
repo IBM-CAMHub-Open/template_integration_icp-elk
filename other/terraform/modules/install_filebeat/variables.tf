@@ -22,3 +22,30 @@ variable "logstash_server_port" { type = "string" description = "Logstash server
 variable "filebeat_source_url" { type = "string" description = "Location of the filebeat installation package" }
 variable "filebeat_config_url" { type = "string" description = "Location of the filebeat configuration file" }
 variable "monitored_paths" { type = "list" description = "List of files and directories to monitor with logstash. Wildcards supported" }
+
+##############################################################
+# Define the bastion variables
+##############################################################
+variable "bastion_host" {
+  type = "string"
+}
+
+variable "bastion_user" {
+  type = "string"
+}
+
+variable "bastion_private_key" {
+  type = "string"
+}
+
+variable "bastion_port" {
+  type = "string"
+}
+
+variable "bastion_host_key" {
+  type = "string"
+}
+
+variable "bastion_password" {
+  type = "string"
+}

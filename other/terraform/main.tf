@@ -24,4 +24,11 @@ module "filebeat_installer_linux" {
   filebeat_source_url  = "${var.filebeat_source_url}"
   filebeat_config_url  = "${var.filebeat_config_url}"
   monitored_paths      = "${var.monitored_paths}"
+  #######
+  bastion_host        = "${var.bastion_host}"
+  bastion_user        = "${var.bastion_user}"
+  bastion_private_key = "${var.bastion_private_key}"
+  bastion_port        = "${var.bastion_port}"
+  bastion_password    = "${var.bastion_password}"      
+  #######  
 }
